@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task</title>
+    <!-- boostrap style cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+    <div class="container mt-4 border p-4 rounded-3">
+        <div class="user-profile mb-3">
+            <img src="https://img.freepik.com/premium-photo/ambition-gets-you-far-i-can-testify-that-portrait-confident-mature-businessman-standing-office-with-his-colleagues-background_590464-47752.jpg?w=740"
+                alt="User Image">
+            <div class="user-details ">
+                <h6>Phoenix Baker</h6>
+                <p>2h ago</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <p>You can <span class="text-primary">@John doe</span> never get enough of these magical vies from Switzerland</p>
+            </div>
+            <div class="my">
+                <div class="first">
+                    <img src="https://img.freepik.com/free-photo/portrait-young-happy-girl-holding-shopping-bags_171337-2608.jpg?w=900&t=st=1688571291~exp=1688571891~hmac=437b9b0354be4199ac4d02ec784d04f3ecbb5c7db53ef0c965eba8986e4815d4"
+                        alt="Card Image 1">
+                </div>
+                <div class="">
+                    <div class="second">
+                        <img src="https://img.freepik.com/free-photo/young-woman-with-shopping-bags-beautiful-dress-hat_1303-17525.jpg?w=900&t=st=1688571029~exp=1688571629~hmac=c34b11997eaa1f728518fa6ddf282cb4a2846d3214156dd9bd51abfa6e81dd9b"
+                            alt="">
+                    </div>
+                    <div class="third">
+                        <button onclick="openModal()">+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galleryModalLabel">Image Gallery</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="imageGallery" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" id="galleryInner"></div>
+                            <a class="carousel-control-prev " href="#imageGallery" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon bg-danger p-2 rounded-circle"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#imageGallery" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon bg-danger p-2 rounded-circle"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only text-primary">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- main js -->
+    <script src="index.js"></script>
+    <!-- boostrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
